@@ -1,0 +1,44 @@
+@import './base.css';
+@import "tailwindcss";
+
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+}
+
+/* 强制 wangeditor 编辑器内容左对齐 */
+.w-e-text-container,
+.w-e-text-container [data-slate-editor],
+.w-e-text-container p,
+.w-e-text-container div,
+.w-e-text-container h1,
+.w-e-text-container h2,
+.w-e-text-container h3,
+.w-e-text-container h4,
+.w-e-text-container h5,
+.w-e-text-container h6,
+.w-e-text-container ul,
+.w-e-text-container ol,
+.w-e-text-container li,
+.w-e-text-container blockquote,
+.w-e-text-container pre {
+  text-align: left !important;
+}
