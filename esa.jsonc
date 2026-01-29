@@ -3,24 +3,6 @@
     // This file defines build artifact locations for cloud deployment
     "output": {
         // Frontend static assets directory (Vite build output)
-        "assets": "dist",
-        // Backend function code directory (Express API server)
-        "function": {
-            "entry": "api-server/app.js",
-            "root": "api-server"
-        }
-    },
-    // Route configuration
-    "routes": [
-        {
-            // API routes - forward to serverless function
-            "path": "/api/*",
-            "target": "function"
-        },
-        {
-            // All other routes - serve static assets (SPA)
-            "path": "/*",
-            "target": "assets"
-        }
-    ]
+        "assets": "dist"
+    }
 }
