@@ -1,8 +1,9 @@
 {
-    // ESA (Edge Side Application) Configuration
-    // This file defines build artifact locations for cloud deployment
-    "output": {
-        // Frontend static assets directory (Vite build output)
-        "assets": "dist"
+    "name": "vue-end",
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "assets": {
+        "directory": "./dist",
+        "notFoundStrategy": "singlePageApplication"
     }
 }
